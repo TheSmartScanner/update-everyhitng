@@ -45,11 +45,30 @@ For each package run below command to update it.
 pip install [package_name] --upgrade
 ```
 
+## NuGet
+From the command line you can update packages in the solution to the latest version available from nuget.org.
+```
+nuget update YourSolution.sln
+```
+
+Note that this will not run any PowerShell scripts in any NuGet packages.
+
+From within Visual Studio you can use the [Package Manager Console](http://docs.nuget.org/docs/reference/package-manager-console-powershell-reference) to also update the packages. This has the benefit that any PowerShell scripts will be run as part of the update where as using NuGet.exe will not run them. The following command will update all packages in every project to the latest version available from nuget.org.
+```
+Update-Package
+```
+
 
 ## WordPress
 WordPress lets you update with the click of a button.  You can launch the update by clicking the link in the new version banner (if it’s there) or by going to the Dashboard > Updates screen. Once you are on the *“Update WordPress”* page, click the button *“Update Now”* to start the process off. You shouldn’t need to do anything else and, once it’s finished, you will be up-to-date.
 
+## Windows
+Run below command on `cmd` to open Windows update screen.
+```
+control update
+```
 
 ## References
 - [npm-audit](https://docs.npmjs.com/cli/v8/commands/npm-audit)
 - [Updating WordPress](https://wordpress.org/support/article/updating-wordpress/)
+- [stackoverflow.com](https://stackoverflow.com/a/6882750)
