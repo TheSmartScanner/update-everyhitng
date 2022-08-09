@@ -23,7 +23,7 @@ Run below command in terminal (ssh)
 sudo zypper up
 ```
 
-## npm (NodeJs)
+## NodeJs (npm)
 Run below command in your NodeJs project directory.
 ```
 npm audit fix
@@ -34,6 +34,17 @@ Some fixs can be forced using below command but you need to make sure it doesn't
 ```
 npm audit fix --force
 ```
+
+## Python (pip)
+You have to update packages one by one. Run below command to get list of outdated packages.
+```
+pip list --outdated
+```
+For each package run below command to update it.
+```
+pip install [package_name] --upgrade
+```
+
 
 ## WordPress
 WordPress lets you update with the click of a button.  You can launch the update by clicking the link in the new version banner (if it’s there) or by going to the Dashboard > Updates screen. Once you are on the *“Update WordPress”* page, click the button *“Update Now”* to start the process off. You shouldn’t need to do anything else and, once it’s finished, you will be up-to-date.
