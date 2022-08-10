@@ -61,6 +61,10 @@ Update-Package
 ## PHP (Composer)
 Navigate to the root of your application, where your `composer.json` file is and run below command.
 ```
+php composer.phar update
+```
+In Windows:
+```
 composer update
 ```
 
@@ -69,6 +73,17 @@ To update all packages in your `GOPATH`, run below command.
 ```
 go get -u all
 ```
+
+## Ruby (gem)
+To update all gems:
+```
+gem update
+```
+RubyGems keeps old versions of gems, run cleanup to remove old gems after update.
+```
+gem cleanup
+```
+
 
 ## WordPress
 WordPress lets you update with the click of a button.  You can launch the update by clicking the link in the new version banner (if it’s there) or by going to the Dashboard > Updates screen. Once you are on the *“Update WordPress”* page, click the button *“Update Now”* to start the process off. You shouldn’t need to do anything else and, once it’s finished, you will be up-to-date.
@@ -83,3 +98,4 @@ control update
 - [npm-audit](https://docs.npmjs.com/cli/v8/commands/npm-audit)
 - [Updating WordPress](https://wordpress.org/support/article/updating-wordpress/)
 - [stackoverflow.com](https://stackoverflow.com/a/6882750)
+- [stackoverflow.com](https://stackoverflow.com/a/10383783)
