@@ -58,6 +58,11 @@ From within Visual Studio you can use the [Package Manager Console](http://docs.
 Update-Package
 ```
 
+## PHP (Composer)
+Navigate to the root of your application, where your `composer.json` file is and run below command.
+```
+composer update
+```
 
 ## WordPress
 WordPress lets you update with the click of a button.  You can launch the update by clicking the link in the new version banner (if it’s there) or by going to the Dashboard > Updates screen. Once you are on the *“Update WordPress”* page, click the button *“Update Now”* to start the process off. You shouldn’t need to do anything else and, once it’s finished, you will be up-to-date.
