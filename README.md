@@ -84,6 +84,12 @@ RubyGems keeps old versions of gems, run cleanup to remove old gems after update
 gem cleanup
 ```
 
+## Maven (mvn)
+Run below command to force update of dependencies.
+```
+mvn clean install -U
+```
+
 ## Rust (cargo)
 For updating all dependcies of your Rust project, you need to install a third-party crate. Install `cargo-update`:
 ```
